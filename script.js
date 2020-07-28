@@ -13,7 +13,6 @@ if(event.type === "click") {
          if (event.target.classList.contains("btn-style")){
             if (event.target.classList.contains("active")){
                event.target.classList.remove("active");
-               document.querySelector(".container").click();
                inpElement.value = "";
             }else{
                event.target.classList.add("active");
