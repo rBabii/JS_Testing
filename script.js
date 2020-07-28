@@ -1,17 +1,14 @@
-const btnInpWrappers = document.querySelectorAll(".btn-inp-wrapper");
+const clickElement_Wrapper = document.querySelector("#main-wrapper");
 
-const doClickBtnWrapp = (event)=>{
- if(event.target.classList.contains("btn-style")){
-    console.log("btn");
-    console.log(event.currentTarget.querySelector(".inp-style"));    
- } else if(event.target.classList.contains("inp-style")){
-    console.log(event.currentTarget.querySelector(".btn-style"));
-    console.log("inp");
- }
-
+let mainClick = (event) => {
+if(event.target.parentElement.classList.contains("btn-inp-wrapper")){
+   let parElem = event.target.parentElement;
+   let inpElement = parElem.querySelector(".inp-style");
+   let btnElement = parElem.querySelector(".btn-style");
+   console.log(btnElement, inpElement);
+}
 }
 
+clickElement_Wrapper.addEventListener("click", mainClick);
 
-btnInpWrappers.forEach(btnWrapper => {
-    btnWrapper.addEventListener("click", doClickBtnWrapp);
-});
+
