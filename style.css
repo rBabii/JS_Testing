@@ -45,6 +45,16 @@ ul, ol, li{
     margin: 5px 0;
 }
 
+#resoult{
+    width: 100%;
+    min-height: 100px;
+    font-size: 35px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .btn-style.active{
     background-color: red;
