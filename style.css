@@ -44,3 +44,8 @@ ul, ol, li{
     min-height: 40px;
     margin: 5px 0;
 }
+
+
+.btn-style.active{
+    background-color: red;
+}
