@@ -28,6 +28,11 @@ if(event.type === "click") {
    if(event.target.parentElement.classList.contains("btn-inp-wrapper")){
       let parElem = event.target.parentElement;
       let btnElement = parElem.querySelector(".btn-style");
+    if(event.target.value !=""){
+       btnElement.classList.add("active");
+    }else{
+       btnElement.classList.remove("active");
+    }
    }
 }
 
